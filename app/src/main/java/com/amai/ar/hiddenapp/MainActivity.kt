@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         clickcount=clickcount+1;
-        if(clickcount==3)
+        if(clickcount%3 == 0)
         {
             stopService(Intent(this, NewService::class.java))
 

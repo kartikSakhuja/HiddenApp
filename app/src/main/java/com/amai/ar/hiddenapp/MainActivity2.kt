@@ -15,7 +15,7 @@ class MainActivity2 : AppCompatActivity() {
 
             if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
                 clickcount=clickcount+1;
-                if(clickcount==3)
+                if(clickcount%3==0)
                 {
                    finish()
                 }
